@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>SlapGame</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="game.css">
+</head>
+
+<body>
+    <header>
+        <span>Health: <span id="health">100</span></span>
+        <span>Target: <span id="target">Batman</span></span>
+        <span>Hits: <span id="hits">0</span></span>
+    </header>
+
+    <main class="container-fluid">
+        <div class="row">
+            <div class="col-12">
+                <div class="row">Image</div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="container-fluid">
+        <div class="row">
+            <div class="col">
+                <button onclick="slap()">SLAP</button>
+                <button onclick="punch()">Punch</button>
+                <button onclick="kick()">Kick</button>
+                <div class="row" id="items">
+                    <div class="col-12">
+                        <h3>use items</h3>
+                        <button id="crowbar" onclick="useCrowBar()">Crowbar</button>
+                        <button id="acid_flower" onclick="useAcidFlower()">Acid Flower</button>
+                        <button id="switchblade" onclick="useSwitchblade()">Switchblade</button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script src="game.js"></script>
+</body>
+
+</html>
